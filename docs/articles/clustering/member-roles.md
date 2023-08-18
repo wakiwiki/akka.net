@@ -79,7 +79,7 @@ akka
 Now that we have laid the foundation for what is to follow, Akka.Cluster is made of various ready-made extensions(or modules) you can deploy.
 I will show you how you can deploy them on any of the nodes. Apart from the Akka.Cluster modules, if you just want to use the Akka.Cluster core, I will show you how you can deploy your own actor to the cluster node with the required role:
 
-**Cluster Sharding**: Sharding be will deployed on the nodes with the `order` role, `node4`
+**Cluster Sharding**: Sharding will be deployed on the nodes with the `order` role, `node4`
 
 ```hocon
 akka
@@ -157,7 +157,7 @@ else
 }
 ```
 
-Using the Cluster `SelfMember`, I am checking if the current node has the `billing` role and if yes, create the `Billing` actor.
+Using the Cluster `SelfMember`, I am checking if the current node has the `fraud` role and if yes, create the `Billing` actor.
 
 ## Cluster-Aware Router
 
